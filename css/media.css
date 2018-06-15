@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+
+    .header-content {
+        padding: 40px 20px;
+        }
+    
+    .header-content h1 {
+        font-size: 50px;
+        }
+        
+    
+}
+
+@media (max-width: 992px) {
+
+    .header-content h1 {
+        font-size: 50px;
+        line-height: 1.3;
+        }
+    .button {
+        font-size: 18px;
+    }
+    .buttoncase {
+        grid-column: 1 / 4;
+    }    
+    .porfolio-section {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .porfolio-item {
+        min-height: 40vh;
+        font-size: 16px;
+    }
+}
