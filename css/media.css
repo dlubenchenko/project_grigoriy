@@ -7,6 +7,9 @@
     .header-content h1 {
         font-size: 50px;
         }
+    .main-header img {
+        
+    }
         
     
 }
@@ -23,11 +26,53 @@
     .buttoncase {
         grid-column: 1 / 4;
     }    
-    .porfolio-section {
+    .portfolio-section {
         grid-template-columns: repeat(3, 1fr); 
     }
     .porfolio-item {
         min-height: 40vh;
         font-size: 16px;
+    }
+    .portfolio-item:nth-child(4) {
+		grid-column: 2 / 4;
+    }
+    .portfolio-item:nth-child(5) {
+		grid-column: 1 / 3;
+		grid-row: initial;
+    }
+	.portfolio-item:nth-child(6) {
+		grid-column: initial;
+		grid-row:  initial;
+	}
+	.portfolio-item:nth-child(7) {
+		grid-column: 1 / 3;
+		grid-row:  initial;
+	}
+	.portfolio-item:nth-child(9) {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+		font-size: 40px;
+    }
+    .portfolio-section {
+        grid-template-columns: 450px;
+    }
+    .porfolio-item {
+        min-height: 50vh;
+    }
+    .portfolio-item:nth-child(1) {
+        grid-column: initial;
+    }
+    .portfolio-item:nth-child(5) {
+        grid-column: initial;
+    }
+    .portfolio-item:nth-child(4) {
+        grid-column: initial;
+    }
+    .buttoncase {
+        grid-column: 1 / 2;
     }
 }
